@@ -9831,6 +9831,7 @@ button {
     width: 48%; }
 
 .Blog {
+  background: #f9f9ff;
   padding: 70px 0;
   width: 100%; }
   .Blog-container {
@@ -9840,7 +9841,17 @@ button {
     .Blog-container-categories {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 40px;
+      margin-bottom: 100px;
+      width: 100%; }
+    .Blog-container-comments {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+    .Blog-container-popular {
+      align-items: center;
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 20px;
       width: 100%; }
   .Blog-category {
     border-radius: 10px;
@@ -9868,6 +9879,130 @@ button {
       width: 85%; }
     .Blog-category:hover a:last-child {
       background: rgba(73, 63, 157, 0.65); }
+  .Blog-left {
+    width: 70%; }
+  .Blog-right {
+    border: 1px solid #eeeeee;
+    padding: 20px;
+    width: 27.5%; }
+    .Blog-right-item {
+      border-top: 1px solid #eeeeee;
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+      width: 100%; }
+  .Blog-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+  .Blog-list {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    width: 25%; }
+    .Blog-list-text {
+      cursor: pointer;
+      margin-right: 8px;
+      transition: all 0.4s ease 0s; }
+      .Blog-list-text:hover {
+        text-decoration: underline; }
+  .Blog-post {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    max-width: 72.5%;
+    overflow: hidden;
+    padding-left: 10px;
+    width: 72.5%; }
+    .Blog-post-image {
+      height: auto;
+      width: 100%; }
+    .Blog-post-title {
+      font-size: 24px;
+      margin-top: 20px;
+      text-align: justify;
+      text-transform: capitalize; }
+    .Blog-post-text {
+      color: #928e8e;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 20px 0;
+      margin-bottom: 26px;
+      text-align: justify; }
+  .Blog-search {
+    align-items: center;
+    background: rgba(34, 34, 34, 0.75);
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    width: 100%; }
+    .Blog-search-icon {
+      color: #fff; }
+  .Blog-input {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    height: 40px;
+    padding: 5px 8px; }
+    .Blog-input::placeholder {
+      color: #fff;
+      opacity: 1; }
+    .Blog-input:focus-visible {
+      border: none;
+      box-shadow: none;
+      outline: none; }
+  .Blog-author {
+    align-items: center;
+    font-family: "Roboto", sans-serif; }
+    .Blog-author-picture {
+      border-radius: 50%; }
+    .Blog-author-name {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 20px;
+      margin-top: 30px; }
+    .Blog-author-text {
+      color: #928e8e;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center; }
+    .Blog-author-social {
+      display: flex;
+      flex-direction: row;
+      gap: 22px;
+      margin: 7px 0px 15px; }
+  .Blog-popular {
+    background: rgba(34, 34, 34, 0.75);
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    padding: 8px 0;
+    text-align: center;
+    width: 100%; }
+    .Blog-popular-image {
+      height: auto;
+      width: 30%; }
+    .Blog-popular-text {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      margin-left: 10px;
+      text-transform: capitalize;
+      transition: all 0.4s ease 0s; }
+      .Blog-popular-text:hover {
+        color: #333;
+        text-decoration: underline; }
 
 .Header {
   background: #202020;
@@ -9979,6 +10114,17 @@ button {
     background: linear-gradient(to right, #202020 15%, #ff0000 100%);
     color: #fff;
     letter-spacing: normal; }
+  .Button-view {
+    background: #fff;
+    color: #202020;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.4s ease 0s; }
+    .Button-view:hover {
+      background: linear-gradient(to right, #ff0000 0%, #ffff00 100%); }
 
 .Footer {
   background: #202020;

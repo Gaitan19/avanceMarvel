@@ -63,4 +63,19 @@
         color: $white;
         letter-spacing: normal;
     }
+
+    &-view {
+        background: $white;
+        color: $midnight;
+        cursor: pointer;
+        font-family: $roboto;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 10px 15px;
+        transition: $transition;
+
+        &:hover {
+            background: $background-play;
+        }
+    }
 }
