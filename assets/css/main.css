@@ -9791,6 +9791,45 @@ button {
         line-height: 40px;
         margin-bottom: 0; } }
 
+.Contact {
+  padding: 70px 0;
+  width: 100%; }
+  .Contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 45px;
+    padding-bottom: 20px;
+    width: 100; }
+  .Contact-information {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 0 10px;
+    width: 30%; }
+  .Contact-text {
+    color: #202020;
+    margin-left: 8px; }
+    .Contact-text:hover {
+      text-decoration: underline; }
+  .Contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 15px;
+    width: 70%; }
+    .Contact-form textarea {
+      height: 134px; }
+  .Contact-inputs {
+    border: 1px solid #eeeeee;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    line-height: 26px;
+    margin-bottom: 25px;
+    padding: 0 10px;
+    width: 48%; }
+
 .Header {
   background: #202020;
   padding: 25px 0;
