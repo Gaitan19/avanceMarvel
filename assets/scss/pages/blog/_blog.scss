@@ -239,4 +239,33 @@
             }
         }
     }
+
+    &-categories {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-item {
+            border-bottom: 2px dashed $WhiteSmoke;
+            color: $medium-gray;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            transition: $transition;
+            width: 100%;
+
+            &:hover {
+                border-bottom: 2px dashed $midnight;
+                color: $midnight;
+            }
+        }
+
+        &-text {
+            font-family: $roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+    }
 }
