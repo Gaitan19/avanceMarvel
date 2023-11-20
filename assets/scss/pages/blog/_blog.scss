@@ -1,0 +1,51 @@
+.Blog {
+    padding: 70px 0;
+    width: 100%;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-categories {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+    }
+
+    &-category {
+        border-radius: 10px;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        width: 32%;
+
+        &-title {
+            align-items: center;
+            background: $transparent-black;
+            color: $white;
+            display: flex;
+            font-family: $roboto;
+            font-size: 16px;
+            height: 60%;
+            justify-content: center;
+            left: 6%;
+            padding: 5px 0;
+            position: absolute;
+            text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
+            top: 24%;
+            transition: $transition;
+            width: 85%;
+        }
+
+        &:hover {
+            a:last-child {
+                background: $transparent-purple;
+            }
+        }
+    }
+}

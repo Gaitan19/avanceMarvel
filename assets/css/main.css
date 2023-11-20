@@ -9830,6 +9830,45 @@ button {
     padding: 0 10px;
     width: 48%; }
 
+.Blog {
+  padding: 70px 0;
+  width: 100%; }
+  .Blog-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .Blog-container-categories {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      width: 100%; }
+  .Blog-category {
+    border-radius: 10px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 32%; }
+    .Blog-category-title {
+      align-items: center;
+      background: rgba(34, 34, 34, 0.75);
+      color: #fff;
+      display: flex;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      height: 60%;
+      justify-content: center;
+      left: 6%;
+      padding: 5px 0;
+      position: absolute;
+      text-align: center;
+      text-decoration: underline;
+      text-transform: uppercase;
+      top: 24%;
+      transition: all 0.4s ease 0s;
+      width: 85%; }
+    .Blog-category:hover a:last-child {
+      background: rgba(73, 63, 157, 0.65); }
+
 .Header {
   background: #202020;
   padding: 25px 0;
