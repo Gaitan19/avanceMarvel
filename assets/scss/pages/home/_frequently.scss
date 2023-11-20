@@ -1,0 +1,41 @@
+.Frequently {
+    padding-bottom: 70px;
+    width: 100;
+
+    &-container {
+        display: flex;
+        margin-top: 40px;
+        width: 100%;
+
+        &-left,
+        &-right {
+            width: 46.6%;
+        }
+
+        &-left {
+            border-right: 2px dashed $transparent-gray;
+        }
+    }
+
+    &-question {
+        margin-left: 10px;
+        padding: 15px;
+        width: 100%;
+
+        &:nth-child(even) {
+            border-bottom: 2px dashed $transparent-gray;
+            border-top: 2px dashed $transparent-gray;
+        }
+    }
+
+    &-titles {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    &-text {
+        color: $dark-gray;
+        font-size: 14px;
+        padding: 0 20px 40px 0;
+    }
+}
