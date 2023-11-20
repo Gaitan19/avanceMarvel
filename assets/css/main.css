@@ -9851,7 +9851,7 @@ button {
       align-items: center;
       display: flex;
       justify-content: flex-start;
-      margin-top: 20px;
+      margin-bottom: 20px;
       width: 100%; }
   .Blog-category {
     border-radius: 10px;
