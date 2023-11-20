@@ -268,4 +268,14 @@
             line-height: 20px;
         }
     }
+
+    &-newsletter {
+        background: $transparent-black;
+        display: flex;
+        width: 100%;
+
+        &-button {
+            font-size: 12px;
+        }
+    }
 }

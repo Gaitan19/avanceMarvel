@@ -10024,6 +10024,9 @@ button {
       font-size: 14px;
       font-weight: 400;
       line-height: 20px; }
+  .Blog-newsletter {
+    background: rgba(34, 34, 34, 0.75);
+    display: flex; }
 
 .Header {
   background: #202020;
