@@ -16,6 +16,7 @@
         }
 
         &-comments {
+            align-items: flex-start;
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -308,5 +309,29 @@
         color: $transparent-black;
         font-size: 12px;
         margin-left: 4px;
+    }
+
+    &-wigets {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &-item {
+            background: $WhiteSmoke;
+            border: 1px solid $light-smoke;
+            color: $midnight;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 12px;
+            margin-bottom: 8px;
+            margin-right: 5px;
+            padding: 0 13px;
+            transition: $transition;
+
+            &:hover {
+                background: $transparent-black;
+                color: $white;
+            }
+        }
     }
 }

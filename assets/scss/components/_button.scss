@@ -75,7 +75,8 @@
         transition: $transition;
 
         &:hover {
-            background: $background-play;
+            background: $transparent-black;
+            color: $white;
         }
     }
 }
