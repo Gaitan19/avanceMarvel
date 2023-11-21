@@ -10084,6 +10084,12 @@ button {
   .Details-container-post {
     display: flex;
     width: 100%; }
+  .Details-container-comments {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    width: 100%; }
   .Details-left {
     padding: 0 18px; }
   .Details-post {
@@ -10113,6 +10119,22 @@ button {
     .Details-form input:focus-visible,
     .Details-form textarea:focus-visible {
       outline: none; }
+  .Details-comment {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    width: 50%; }
+    .Details-comment-picture {
+      height: auto;
+      width: 27%; }
+    .Details-comment-title {
+      font-size: 16px;
+      font-weight: 600; }
+    .Details-comment-date {
+      color: #928e8e;
+      font-size: 13px; }
+    .Details-comment-text {
+      color: #202020;
+      margin-left: 5px; }
 
 .Header {
   background: #202020;
@@ -10243,6 +10265,11 @@ button {
     transition: all 0.4s ease 0s; }
     .Button-form:hover {
       background: #928e8e; }
+  .Button-reply {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 18px;
+    text-transform: uppercase; }
 
 .Footer {
   background: #202020;
