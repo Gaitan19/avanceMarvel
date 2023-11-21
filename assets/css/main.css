@@ -10314,6 +10314,7 @@ button {
       .Footer-promotion-text:hover {
         color: #bcc1c5; }
   .Footer-link {
+    color: #fff;
     cursor: pointer;
     display: block;
     font-size: 18px;
