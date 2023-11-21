@@ -1,0 +1,28 @@
+.Details {
+    background: $AliceBlue;
+    padding: 80px 0;
+    width: 100%;
+
+    &-image {
+        height: auto;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    &-container {
+        &-post {
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    &-post {
+        margin-bottom: 30px;
+        padding: 0 15px;
+
+        &-text {
+            margin: 12px 0 0;
+            text-align: initial;
+        }
+    }
+}
