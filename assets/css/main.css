@@ -10025,8 +10025,34 @@ button {
       font-weight: 400;
       line-height: 20px; }
   .Blog-newsletter {
-    background: rgba(34, 34, 34, 0.75);
-    display: flex; }
+    align-items: center;
+    background: #eeeeee;
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%; }
+    .Blog-newsletter-button {
+      background: rgba(34, 34, 34, 0.75);
+      color: #eeeeee;
+      font-size: 12px;
+      padding: 10px 0;
+      width: 29.5%; }
+    .Blog-newsletter-input {
+      color: rgba(34, 34, 34, 0.75);
+      width: 64%; }
+      .Blog-newsletter-input::placeholder {
+        color: rgba(34, 34, 34, 0.75);
+        opacity: 1; }
+    .Blog-newsletter-text {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 1rem;
+      text-align: center; }
+  .Blog-email {
+    color: rgba(34, 34, 34, 0.75);
+    font-size: 12px;
+    margin-left: 4px; }
 
 .Header {
   background: #202020;
