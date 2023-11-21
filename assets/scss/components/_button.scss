@@ -79,4 +79,15 @@
             color: $white;
         }
     }
+
+    &-form {
+        background: $transparent-black;
+        border-radius: 5px;
+        color: $white;
+        transition: $transition;
+
+        &:hover {
+            background: $medium-gray;
+        }
+    }
 }

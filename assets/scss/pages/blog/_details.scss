@@ -16,6 +16,10 @@
         }
     }
 
+    &-left {
+        padding: 0 18px;
+    }
+
     &-post {
         margin-bottom: 30px;
         padding: 0 15px;
@@ -23,6 +27,35 @@
         &-text {
             margin: 12px 0 0;
             text-align: initial;
+        }
+    }
+
+    &-item {
+        border: 2px solid $WhiteSmoke;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        max-width: 100%;
+        padding: 50px 30px;
+        width: 100%;
+
+        &-title {
+            color: $midnight;
+            font-family: $roboto;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-form {
+        width: 100%;
+
+        & input:focus-visible,
+        & textarea:focus-visible {
+            outline: none;
         }
     }
 }

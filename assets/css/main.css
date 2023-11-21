@@ -10084,12 +10084,35 @@ button {
   .Details-container-post {
     display: flex;
     width: 100%; }
+  .Details-left {
+    padding: 0 18px; }
   .Details-post {
     margin-bottom: 30px;
     padding: 0 15px; }
     .Details-post-text {
       margin: 12px 0 0;
       text-align: initial; }
+  .Details-item {
+    border: 2px solid #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    max-width: 100%;
+    padding: 50px 30px;
+    width: 100%; }
+    .Details-item-title {
+      color: #202020;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      text-align: center;
+      width: 100%; }
+  .Details-form {
+    width: 100%; }
+    .Details-form input:focus-visible,
+    .Details-form textarea:focus-visible {
+      outline: none; }
 
 .Header {
   background: #202020;
@@ -10213,6 +10236,13 @@ button {
     .Button-view:hover {
       background: rgba(34, 34, 34, 0.75);
       color: #fff; }
+  .Button-form {
+    background: rgba(34, 34, 34, 0.75);
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.4s ease 0s; }
+    .Button-form:hover {
+      background: #928e8e; }
 
 .Footer {
   background: #202020;
