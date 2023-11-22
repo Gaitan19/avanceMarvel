@@ -10195,7 +10195,9 @@ button {
     visibility: hidden; }
     .Navbar-dropdown-item {
       border-bottom: 1px solid #ededed;
-      padding: 0 30px; }
+      padding: 10px 30px; }
+      .Navbar-dropdown-item:last-child {
+        border: none; }
 
 .Button {
   background: linear-gradient(to right, #ff0000 0%, #ffff00 51%, #ff0000 100%);

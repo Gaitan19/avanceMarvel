@@ -64,7 +64,11 @@
 
         &-item {
             border-bottom: 1px solid $light-gray;
-            padding: 0 30px;
+            padding: 10px 30px;
+
+            &:last-child {
+                border: none;
+            }
         }
     }
 }
