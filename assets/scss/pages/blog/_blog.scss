@@ -1,5 +1,5 @@
 .Blog {
-    background: $AliceBlue;
+    background: $alice-blue;
     padding: 70px 0;
     width: 100%;
 
@@ -70,12 +70,12 @@
     }
 
     &-right {
-        border: 1px solid $WhiteSmoke;
+        border: 1px solid $white-smoke;
         padding: 20px;
         width: 27.5%;
 
         &-item {
-            border-top: 1px solid $WhiteSmoke;
+            border-top: 1px solid $white-smoke;
             display: flex;
             flex-direction: column;
             padding-top: 30px;
@@ -90,10 +90,13 @@
     }
 
     &-list {
-        align-items: flex-end;
+        align-content: flex-start;
+        align-items: flex-start;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 15px;
+        justify-content: flex-end;
         margin-top: 30px;
         width: 25%;
 
@@ -247,7 +250,7 @@
         width: 100%;
 
         &-item {
-            border-bottom: 2px dashed $WhiteSmoke;
+            border-bottom: 2px dashed $white-smoke;
             color: $medium-gray;
             cursor: pointer;
             display: flex;
@@ -272,14 +275,14 @@
 
     &-newsletter {
         align-items: center;
-        background: $WhiteSmoke;
+        background: $white-smoke;
         display: flex;
         margin-bottom: 1rem;
         width: 100%;
 
         &-button {
             background: $transparent-black;
-            color: $WhiteSmoke;
+            color: $white-smoke;
             font-size: 12px;
             padding: 10px 0;
             width: 29.5%;
@@ -317,7 +320,7 @@
         flex-wrap: wrap;
 
         &-item {
-            background: $WhiteSmoke;
+            background: $white-smoke;
             border: 1px solid $light-smoke;
             color: $midnight;
             cursor: pointer;

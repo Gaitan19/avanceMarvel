@@ -9642,7 +9642,9 @@ button {
 
 .Frequently {
   padding-bottom: 70px;
-  width: 100; }
+  width: 100%; }
+  .Frequently-marvel {
+    padding: 70px 0; }
   .Frequently-container {
     display: flex;
     margin-top: 40px;
@@ -9897,10 +9899,13 @@ button {
     justify-content: space-between;
     width: 100%; }
   .Blog-list {
-    align-items: flex-end;
+    align-content: flex-start;
+    align-items: flex-start;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
+    justify-content: flex-end;
     margin-top: 30px;
     width: 25%; }
     .Blog-list-text {
