@@ -10468,6 +10468,7 @@ button {
   .Footer-marvel {
     margin-right: 20px; }
   .Footer-container-principal {
+    align-items: flex-start;
     border-bottom: 2px solid #928e8e;
     display: flex;
     padding-bottom: 60px;
@@ -10532,6 +10533,45 @@ button {
     transition: all 0.4s ease 0s; }
     .Footer-link:hover {
       color: #bcc1c5; }
+  @media (max-width: 991.98px) {
+    .Footer-item {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      width: 33.3%; }
+    .Footer-container-principal {
+      flex-wrap: wrap; }
+    .Footer-container-social {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      width: 33.3%; }
+    .Footer-container-promotion {
+      display: none; }
+    .Footer-marvel {
+      margin: 0 44% 5%; }
+    .Footer-social {
+      justify-content: center;
+      padding: 0; } }
+  @media (max-width: 767.98px) {
+    .Footer-container-secondary {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center; } }
+  @media (max-width: 575.98px) {
+    .Footer-container-principal {
+      align-items: center;
+      flex-direction: column; }
+    .Footer-container-social {
+      width: 96.6%; }
+    .Footer-container-promotion {
+      display: none; }
+    .Footer-item {
+      width: 96.6%; }
+    .Footer-social {
+      justify-content: center; } }
 
 .Hero {
   background: rgba(34, 34, 34, 0.9);

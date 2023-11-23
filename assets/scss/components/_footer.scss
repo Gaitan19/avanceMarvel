@@ -21,6 +21,7 @@
 
     &-container {
         &-principal {
+            align-items: flex-start;
             border-bottom: 2px solid $medium-gray;
             display: flex;
             padding-bottom: 60px;
@@ -113,6 +114,82 @@
 
         &:hover {
             color: $light-steel;
+        }
+    }
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @include media-breakpoint-down(xl) {
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-item {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            width: 33.3%;
+        }
+
+        &-container {
+            &-principal {
+                flex-wrap: wrap;
+            }
+
+            &-social {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                width: 33.3%;
+            }
+            &-promotion {
+                display: none;
+            }
+        }
+
+        &-marvel {
+            margin: 0 44% 5%;
+        }
+
+        &-social {
+            justify-content: center;
+            padding: 0;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-container {
+            &-secondary {
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-container {
+            &-principal {
+                align-items: center;
+                flex-direction: column;
+            }
+
+            &-social {
+                width: 96.6%;
+            }
+            &-promotion {
+                display: none;
+            }
+        }
+
+        &-item {
+            width: 96.6%;
+        }
+
+        &-social {
+            justify-content: center;
         }
     }
 }
