@@ -19,6 +19,7 @@
             align-items: flex-start;
             display: flex;
             justify-content: space-between;
+            margin-top: 40px;
             width: 100%;
         }
 
@@ -335,6 +336,49 @@
                 background: $transparent-black;
                 color: $white;
             }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-container {
+            &-comments {
+                flex-direction: column;
+            }
+        }
+        &-left,
+        &-right {
+            width: 100%;
+        }
+        &-input {
+            width: 90%;
+        }
+
+        &-newsletter-input {
+            width: 68%;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-item {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-post {
+            max-width: 100%;
+            padding-left: 0;
+            width: 100%;
+        }
+
+        &-list {
+            justify-content: flex-start;
+            width: 30%;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-list {
+            width: 45%;
         }
     }
 }
