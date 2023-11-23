@@ -9735,20 +9735,20 @@ button {
     padding-bottom: 50px;
     width: 100; }
   @media (max-width: 991.98px) {
+    .Pricing-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px; }
     .Pricing-item {
-      width: 46.3%; }
-      .Pricing-item:last-child {
-        display: none; } }
+      margin-top: 30px;
+      width: 45%; } }
   @media (max-width: 767.98px) {
     .Pricing-container {
       align-items: center;
       flex-direction: column;
       gap: 35px; }
     .Pricing-item {
-      width: 100%; }
-      .Pricing-item:last-child {
-        display: flex;
-        flex-direction: column; } }
+      width: 100%; } }
 
 .Frequently {
   padding-bottom: 70px;
