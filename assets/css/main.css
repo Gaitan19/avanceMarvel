@@ -9734,6 +9734,21 @@ button {
     justify-content: center;
     padding-bottom: 50px;
     width: 100; }
+  @media (max-width: 991.98px) {
+    .Pricing-item {
+      width: 46.3%; }
+      .Pricing-item:last-child {
+        display: none; } }
+  @media (max-width: 767.98px) {
+    .Pricing-container {
+      align-items: center;
+      flex-direction: column;
+      gap: 35px; }
+    .Pricing-item {
+      width: 100%; }
+      .Pricing-item:last-child {
+        display: flex;
+        flex-direction: column; } }
 
 .Frequently {
   padding-bottom: 70px;
@@ -9762,6 +9777,24 @@ button {
     color: #333;
     font-size: 14px;
     padding: 0 20px 40px 0; }
+  @media (max-width: 1199.98px) {
+    .Frequently-question {
+      min-height: 185px; } }
+  @media (max-width: 991.98px) {
+    .Frequently-text {
+      padding-bottom: 15px; }
+    .Frequently-question {
+      min-height: 203px; } }
+  @media (max-width: 767.98px) {
+    .Frequently-container {
+      flex-direction: column; }
+      .Frequently-container-left, .Frequently-container-right {
+        border: none;
+        width: 100%; }
+    .Frequently-question {
+      min-height: auto; }
+      .Frequently-question:nth-child(even) {
+        border: none; } }
 
 .Latest {
   padding-bottom: 80px;
@@ -9810,6 +9843,21 @@ button {
       width: 100%; }
     .Latest-card:hover img:last-child {
       transform: scale(1.2); }
+  @media (max-width: 991.98px) {
+    .Latest-card {
+      max-width: 46.6%;
+      width: 46.6%; }
+      .Latest-card:last-child {
+        display: none; } }
+  @media (max-width: 767.98px) {
+    .Latest-container {
+      gap: 40px; }
+    .Latest-card {
+      max-width: 100%;
+      width: 100%; }
+      .Latest-card:last-child {
+        display: flex;
+        flex-direction: column; } }
 
 .Subscribe {
   background: linear-gradient(to right, #202020 10%, #8b0000 50%, #202020 90%);

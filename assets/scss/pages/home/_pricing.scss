@@ -58,4 +58,35 @@
         padding-bottom: 50px;
         width: 100;
     }
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @include media-breakpoint-down(xl) {
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-item {
+            width: 46.3%;
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-container {
+            align-items: center;
+            flex-direction: column;
+            gap: 35px;
+        }
+
+        &-item {
+            width: 100%;
+            &:last-child {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
 }
