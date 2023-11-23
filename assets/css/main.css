@@ -9904,11 +9904,17 @@ button {
     width: 427.5px; }
     .Subscribe-input:focus {
       outline: none; }
+  @media (max-width: 1399.98px) {
+    .Subscribe-content {
+      max-width: 1440px; } }
+  @media (max-width: 1199.98px) {
+    .Subscribe-content {
+      max-width: 960px; }
+    .Subscribe-form {
+      width: 46%; } }
   @media (max-width: 991.98px) {
     .Subscribe-content {
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: flex-start; }
+      max-width: 720px; }
     .Subscribe-info {
       margin-bottom: 30px;
       width: 100%; }
@@ -9918,23 +9924,24 @@ button {
       height: 88.72px;
       width: 104.39px; }
     .Subscribe-input {
-      width: 100%; } }
+      width: 100%; }
+    .Subscribe-text:last-child {
+      font-size: 28px; } }
+  @media (max-width: 767.98px) {
+    .Subscribe-content {
+      align-items: center;
+      flex-direction: column;
+      max-width: 540px; }
+    .Subscribe-form {
+      width: 100%; }
+    .Subscribe-info {
+      align-items: center; } }
   @media (max-width: 575.98px) {
     .Subscribe-content {
+      max-width: 100%;
       padding: 40px 10px; }
-    .Subscribe-info {
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 20px; }
-    .Subscribe-image {
-      height: 104.41px;
-      width: 122.84px; }
     .Subscribe-text {
-      font-size: 16px; }
-      .Subscribe-text:last-child {
-        font-size: 29px;
-        line-height: 40px;
-        margin-bottom: 0; } }
+      font-size: 16px; } }
 
 .Contact {
   padding: 70px 0;
