@@ -9383,6 +9383,15 @@ button {
   .Banner-text {
     font-size: 16px;
     margin-bottom: 20px; }
+  @media (max-width: 1199.98px) {
+    .Banner-title {
+      font-size: 36px;
+      line-height: 45px; } }
+  @media (max-width: 991.98px) {
+    .Banner-container-image {
+      display: none; }
+    .Banner-right {
+      width: 100%; } }
 
 .About {
   background: linear-gradient(to right, #202020 15%, #ff0000 100%);
