@@ -59,4 +59,26 @@
             }
         }
     }
+
+    @include media-breakpoint-down(lg) {
+        &-container {
+            justify-content: space-between;
+            margin: 0;
+        }
+
+        &-item {
+            margin-top: 40px;
+            width: 45%;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-item {
+            width: 95%;
+            &-title {
+                padding: 12px 0;
+                top: 45%;
+            }
+        }
+    }
 }

@@ -9497,6 +9497,19 @@ button {
       .Marvel-item-title:hover {
         background: linear-gradient(to right, #ff0000 0%, #ffff00 100%);
         color: #000; }
+  @media (max-width: 991.98px) {
+    .Marvel-container {
+      justify-content: space-between;
+      margin: 0; }
+    .Marvel-item {
+      margin-top: 40px;
+      width: 45%; } }
+  @media (max-width: 575.98px) {
+    .Marvel-item {
+      width: 95%; }
+      .Marvel-item-title {
+        padding: 12px 0;
+        top: 45%; } }
 
 .Updates {
   background: linear-gradient(to right, #202020 15%, #ff0000 100%);
