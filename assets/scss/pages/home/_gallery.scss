@@ -39,6 +39,7 @@
         &-image {
             cursor: pointer;
             margin: 10px;
+            max-width: 100%;
             overflow: hidden;
             position: relative;
 
@@ -67,5 +68,63 @@
     &-icon {
         color: $white;
         font-size: 25px;
+    }
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-container-left {
+            justify-content: space-between;
+        }
+
+        &-image-primary {
+            width: 46%;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-container {
+            &-right {
+                display: none;
+            }
+
+            &-left {
+                width: 96.6%;
+            }
+        }
+        &-image-primary {
+            width: 47%;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-container {
+            align-items: center;
+            flex-direction: column;
+
+            &-right,
+            &-left {
+                display: flex;
+                width: 100%;
+            }
+        }
+
+        &-image-primary {
+            width: 45%;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-image {
+            &-primary,
+            &-secondary {
+                width: 100%;
+            }
+        }
+        &-left {
+            flex-direction: column;
+            width: 100%;
+        }
     }
 }

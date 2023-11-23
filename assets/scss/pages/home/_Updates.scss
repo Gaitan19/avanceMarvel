@@ -89,4 +89,21 @@
             text-transform: capitalize;
         }
     }
+
+    @include media-breakpoint-down(xl) {
+        &-title-secondary {
+            font-size: 25px;
+            line-height: 35px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-items-picture {
+            display: none;
+        }
+
+        &-container-text {
+            width: 100%;
+        }
+    }
 }

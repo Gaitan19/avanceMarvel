@@ -9574,6 +9574,15 @@ button {
       line-height: 40px;
       margin-bottom: 30px;
       text-transform: capitalize; }
+  @media (max-width: 1199.98px) {
+    .Updates-title-secondary {
+      font-size: 25px;
+      line-height: 35px; } }
+  @media (max-width: 991.98px) {
+    .Updates-items-picture {
+      display: none; }
+    .Updates-container-text {
+      width: 100%; } }
 
 .Gallery {
   padding: 80px 0;
@@ -9606,6 +9615,7 @@ button {
     .Gallery-container-image {
       cursor: pointer;
       margin: 10px;
+      max-width: 100%;
       overflow: hidden;
       position: relative; }
       .Gallery-container-image:hover .Gallery-container-icon {
@@ -9621,6 +9631,33 @@ button {
   .Gallery-icon {
     color: #fff;
     font-size: 25px; }
+  @media (max-width: 1199.98px) {
+    .Gallery-container-left {
+      justify-content: space-between; }
+    .Gallery-image-primary {
+      width: 46%; } }
+  @media (max-width: 991.98px) {
+    .Gallery-container-right {
+      display: none; }
+    .Gallery-container-left {
+      width: 96.6%; }
+    .Gallery-image-primary {
+      width: 47%; } }
+  @media (max-width: 767.98px) {
+    .Gallery-container {
+      align-items: center;
+      flex-direction: column; }
+      .Gallery-container-right, .Gallery-container-left {
+        display: flex;
+        width: 100%; }
+    .Gallery-image-primary {
+      width: 45%; } }
+  @media (max-width: 575.98px) {
+    .Gallery-image-primary, .Gallery-image-secondary {
+      width: 100%; }
+    .Gallery-left {
+      flex-direction: column;
+      width: 100%; } }
 
 .Testimonials {
   background: linear-gradient(to right, #202020 15%, #ff0000 100%);
