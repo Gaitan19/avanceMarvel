@@ -34,9 +34,6 @@
         margin-bottom: 20px;
     }
 
-    @include media-breakpoint-down(xxl) {
-    }
-
     @include media-breakpoint-down(xl) {
         &-title {
             font-size: 36px;
@@ -52,11 +49,5 @@
         &-right {
             width: 100%;
         }
-    }
-
-    @include media-breakpoint-down(md) {
-    }
-
-    @include media-breakpoint-down(sm) {
     }
 }
