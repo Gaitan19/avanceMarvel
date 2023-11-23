@@ -9347,9 +9347,18 @@ button {
   max-width: 1140px;
   padding: 0 15px;
   width: 100%; }
+  @media (max-width: 1399.98px) {
+    .Container {
+      max-width: 1140px; } }
   @media (max-width: 1199.98px) {
     .Container {
       max-width: 960px; } }
+  @media (max-width: 991.98px) {
+    .Container {
+      max-width: 720px; } }
+  @media (max-width: 767.98px) {
+    .Container {
+      max-width: 540px; } }
 
 .Banner {
   background: none;
@@ -10198,6 +10207,31 @@ button {
       padding: 10px 30px; }
       .Navbar-dropdown-item:last-child {
         border: none; }
+  @media (max-width: 991.98px) {
+    .Navbar-button {
+      display: none; }
+    .Navbar-menu {
+      justify-content: flex-start;
+      margin-top: 10px; }
+    .Navbar-options {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+    .Navbar-item {
+      border-bottom: 1px solid #eeeeee;
+      margin-bottom: 8px;
+      padding-top: 8px;
+      width: 100%; }
+      .Navbar-item:last-child {
+        border: none; }
+      .Navbar-item:hover .Navbar-dropdown {
+        height: 100%; }
+    .Navbar-dropdown {
+      background: rgba(255, 255, 255, 0.2);
+      height: 0;
+      position: static;
+      transition: none; } }
 
 .Button {
   background: linear-gradient(to right, #ff0000 0%, #ffff00 51%, #ff0000 100%);

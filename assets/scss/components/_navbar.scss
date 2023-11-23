@@ -71,4 +71,46 @@
             }
         }
     }
+
+    @include media-breakpoint-down(lg) {
+        &-button {
+            display: none;
+        }
+
+        &-menu {
+            justify-content: flex-start;
+            margin-top: 10px;
+        }
+
+        &-options {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &-item {
+            border-bottom: 1px solid $white-smoke;
+            margin-bottom: 8px;
+            padding-top: 8px;
+            width: 100%;
+
+            &:last-child {
+                border: none;
+            }
+
+            &:hover {
+                .Navbar-dropdown {
+                    height: 100%;
+                }
+            }
+        }
+
+        &-dropdown {
+            background: $white-dashed;
+            height: 0;
+            position: static;
+            transition: none;
+        }
+    }
 }
