@@ -9680,9 +9680,17 @@ button {
     margin-bottom: 20px; }
   .Testimonials-name {
     font-size: 28px;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    text-align: center; }
   .Testimonials-text {
     text-align: center; }
+  @media (max-width: 767.98px) {
+    .Testimonials-container {
+      min-height: 181px;
+      padding: 0; } }
+  @media (max-width: 575.98px) {
+    .Testimonials-container {
+      min-height: 205px; } }
 
 .Pricing {
   padding: 90px 0; }
