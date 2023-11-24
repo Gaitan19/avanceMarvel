@@ -60,6 +60,7 @@
     }
 
     @include media-breakpoint-down(lg) {
+        padding: 50px;
         &-content {
             align-items: center;
             display: flex;

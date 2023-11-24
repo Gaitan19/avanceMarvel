@@ -9435,16 +9435,18 @@ button {
       font-size: 30px;
       line-height: 40px; } }
   @media (max-width: 991.98px) {
-    .About-content {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding: 70px 35px 73px 35px; }
-    .About-container {
-      width: 100%; }
-      .About-container-picture {
-        padding: 0; } }
+    .About {
+      padding: 50px; }
+      .About-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 70px 35px 73px 35px; }
+      .About-container {
+        width: 100%; }
+        .About-container-picture {
+          padding: 0; } }
   @media (max-width: 575.98px) {
     .About-title-secondary {
       font-size: 20px;
@@ -10323,6 +10325,18 @@ button {
     .Details-comment-text {
       color: #202020;
       margin-left: 5px; }
+  @media (max-width: 991.98px) {
+    .Details-left {
+      padding: 0; }
+    .Details-item:last-child {
+      margin-bottom: 50px; } }
+  @media (max-width: 767.98px) {
+    .Details-container-post {
+      flex-direction: column; }
+    .Details-post {
+      padding-left: 0; }
+    .Details-comment {
+      width: 75%; } }
 
 .Header {
   background: #202020;

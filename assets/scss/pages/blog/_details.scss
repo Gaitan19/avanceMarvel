@@ -92,4 +92,30 @@
             margin-left: 5px;
         }
     }
+
+    @include media-breakpoint-down(lg) {
+        &-left {
+            padding: 0;
+        }
+
+        &-item:last-child {
+            margin-bottom: 50px;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-container {
+            &-post {
+                flex-direction: column;
+            }
+        }
+
+        &-post {
+            padding-left: 0;
+        }
+
+        &-comment {
+            width: 75%;
+        }
+    }
 }
