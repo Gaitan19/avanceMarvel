@@ -10670,4 +10670,33 @@ button {
     line-height: 40px;
     text-align: center; }
 
+.Modal-active {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 35px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+  .Modal-active::after {
+    background: rgba(34, 34, 34, 0.75);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
+  .Modal-active:hover button {
+    display: none; }
+  .Modal-active img {
+    height: 100%;
+    width: auto;
+    z-index: 2; }
+
 /*# sourceMappingURL=main.css.map */
