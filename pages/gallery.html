@@ -22,14 +22,14 @@
                <h2 class="Gallery-title">Gallery</h2>
                <div class="Gallery-container">
                     <div class="Gallery-container-left">
-                        <div class="Gallery-container-image Modal Gallery-image-primary">
+                        <div class="Gallery-container-image Gallery-image-primary">
                             <img class="Gallery-image" src="../assets/images/marvel1.jpg"alt="Marvel logo"/>
                             <button class="Gallery-container-icon Button-modal">
                                 <span class="fa-regular fa-eye Gallery-icon"></span>
                             </button>
                         </div>
 
-                        <div class="Gallery-container-image Modal Gallery-image-primary">
+                        <div class="Gallery-container-image Gallery-image-primary">
                             <img class="Gallery-image" src="../assets/images/marvel2.jpg" alt="Marvel united"/>
                             <button class="Gallery-container-icon Button-modal">
                                 <span class="fa-regular fa-eye Gallery-icon"></span>
@@ -37,7 +37,7 @@
                         </div>
 
 
-                        <div class="Gallery-container-image Modal Gallery-image-secondary">
+                        <div class="Gallery-container-image Gallery-image-secondary">
                             <img class="Gallery-image" src="../assets/images/marvel3.jpg" alt="Heroes comics version"/>
                             <button class="Gallery-container-icon Button-modal">
                                 <span class="fa-regular fa-eye Gallery-icon"></span>
@@ -47,14 +47,19 @@
                     </div>
 
                     <div class="Gallery-container-right">
-                        <div class="Gallery-container-image Modal w-100">
+                        <div class="Gallery-container-image w-100">
                             <img class="Gallery-image" src="../assets/images/marvel4.jpg" alt="Iron man"/>
                             <button class="Gallery-container-icon Button-modal">
                                 <span class="fa-regular fa-eye Gallery-icon"></span>
                             </button>
                         </div>
                     </div>
-               </div>
+                    
+                    <div id="modal" class="Modal">
+                        <span id="closeModal" class="Modal-close">&times;</span>
+                        <img class="Modal-content" id="modalImage">
+                    </div>
+                </div>
             </div>
         </section>
         <div id="footer"></div>
