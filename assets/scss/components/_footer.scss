@@ -117,12 +117,6 @@
         }
     }
 
-    @include media-breakpoint-down(xxl) {
-    }
-
-    @include media-breakpoint-down(xl) {
-    }
-
     @include media-breakpoint-down(lg) {
         &-item {
             align-items: center;
@@ -170,6 +164,10 @@
     }
 
     @include media-breakpoint-down(sm) {
+        &-marvel {
+            margin: 0 0 5%;
+        }
+
         &-container {
             &-principal {
                 align-items: center;

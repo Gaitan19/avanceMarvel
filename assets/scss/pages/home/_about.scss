@@ -77,10 +77,27 @@
         }
     }
 
+    @include media-breakpoint-down(md) {
+        &-title {
+            margin-bottom: 6px;
+            &-secondary {
+                padding: 20px 0;
+            }
+        }
+    }
+
     @include media-breakpoint-down(sm) {
+        &-text {
+            padding: 0 0 20px 0;
+        }
+
         &-title-secondary {
             font-size: 20px;
             line-height: 25px;
+        }
+
+        &-content {
+            padding: 15px;
         }
     }
 }

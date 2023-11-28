@@ -118,4 +118,28 @@
             width: 75%;
         }
     }
+
+    @include media-breakpoint-down(sm) {
+        &-container-comments {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &-item {
+            padding: 20px;
+        }
+
+        &-comment {
+            flex-direction: column;
+            width: 80%;
+
+            &-picture {
+                width: 100%;
+            }
+
+            &-text {
+                margin: 10px 0;
+            }
+        }
+    }
 }

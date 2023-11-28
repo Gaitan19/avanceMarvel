@@ -70,9 +70,6 @@
         font-size: 25px;
     }
 
-    @include media-breakpoint-down(xxl) {
-    }
-
     @include media-breakpoint-down(xl) {
         &-container-left {
             justify-content: space-between;
