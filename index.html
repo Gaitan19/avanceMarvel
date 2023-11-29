@@ -371,9 +371,11 @@
             </div>
               <form class="Subscribe-form">
                 <input
-                  type="email"
+                  type="text"
                   placeholder="Enter your mail address"
                   class="Subscribe-input"
+                  name="email_to" 
+                  id="email_to"
                   required
                 />
                 <Button type="submit" class="Button Button-subscribe">
@@ -381,7 +383,7 @@
                 </Button>
               </form>
             </div>
-        </section>
+        </section> 
 
         <div id="footer"></div>
 
@@ -393,5 +395,8 @@
         <script src="assets/js/tab.js" ></script>
         <script src="assets/js/footer.js"></script>
         <script src="../assets/js/modal.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">emailjs.init('9vOJWYc2q4StobD0T')</script>
+        <script src="../assets/js/mailer.js"></script>
     </body>
 </html>
