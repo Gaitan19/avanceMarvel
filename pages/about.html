@@ -7,6 +7,8 @@
         <title>Marvel | About</title>
         <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
         <link rel="stylesheet" href="/assets/css/main.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">emailjs.init('9vOJWYc2q4StobD0T')</script>
     </head>
     <body>
         <div id="header"></div>
@@ -85,6 +87,8 @@
                   type="text"
                   placeholder="Enter your mail address"
                   class="Subscribe-input"
+                  name="email_to" 
+                  id="email_to"
                   required
                 />
                 <Button type="submit" class="Button Button-subscribe">
@@ -103,6 +107,6 @@
         <script src="../assets/js/header.js"></script>
         <script src="../assets/js/footer.js"></script>
         <script src="../assets/js/heroes.js"></script>
-
+        <script src="../assets/js/mailer.js"></script>
     </body>
 </html>
