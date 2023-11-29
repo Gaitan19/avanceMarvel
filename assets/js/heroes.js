@@ -33,9 +33,9 @@ const marvelQuotes = [
   },
 ];
 
-const getRandomIndex = (max) => Math.floor(Math.random() * max);
+const getRandomIndex = () => Math.floor(Math.random() * marvelQuotes.length);
 
-const randomIndex = getRandomIndex(marvelQuotes.length);
+const randomIndex = getRandomIndex();
 
 const heroImage = document.querySelector(".Hero-image");
 const heroText = document.querySelector(".Hero-text");
