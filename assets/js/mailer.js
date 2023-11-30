@@ -6,13 +6,13 @@ formSubscribe.addEventListener("submit", function (event) {
   event.preventDefault();
   buttonSubscribe.textContent = "Sending...";
   const serviceID = "default_service";
-  const templateID = "template_iqllkfb";
+  const templateID = "template_wvm7a11";
 
   emailjs.sendForm(serviceID, templateID, this).then(
     () => {
       buttonSubscribe.textContent = "Subscribe";
       inputSubscribe.value = "";
-      alert("Subscription sucess");
+      alert("Subscription success");
     },
     (error) => {
       buttonSubscribe.textContent = "Subscribe";
