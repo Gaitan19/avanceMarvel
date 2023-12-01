@@ -32,11 +32,8 @@ const marvelQuotes = [
     text: "I'm Here To Talk To You About The Avengers Initiative.",
   },
 ];
-
 const getRandomIndex = () => Math.floor(Math.random() * marvelQuotes.length);
-
 const randomIndex = getRandomIndex();
-
 const heroImage = document.querySelector(".Hero-image");
 const heroText = document.querySelector(".Hero-text");
 
