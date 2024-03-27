@@ -9649,19 +9649,15 @@ button {
     .Gallery-image-primary {
       width: 46%; } }
   @media (max-width: 991.98px) {
-    .Gallery-container-right {
-      display: none; }
-    .Gallery-container-left {
-      width: 96.6%; }
-    .Gallery-image-primary {
-      width: 47%; } }
-  @media (max-width: 767.98px) {
     .Gallery-container {
       align-items: center;
       flex-direction: column; }
       .Gallery-container-right, .Gallery-container-left {
         display: flex;
         width: 100%; }
+    .Gallery-image-primary {
+      width: 47%; } }
+  @media (max-width: 767.98px) {
     .Gallery-image-primary {
       width: 45%; } }
   @media (max-width: 575.98px) {
@@ -10670,33 +10666,41 @@ button {
     line-height: 40px;
     text-align: center; }
 
-.Modal-active {
+.Modal {
   align-items: center;
-  display: flex;
+  background-color: rgba(34, 34, 34, 0.75);
+  display: none;
   height: 100%;
   justify-content: center;
   left: 0;
-  margin: 0;
-  overflow: hidden;
-  padding: 35px 0;
+  overflow: auto;
+  padding-top: 50px;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1; }
-  .Modal-active::after {
-    background: rgba(34, 34, 34, 0.75);
-    content: "";
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1; }
-  .Modal-active:hover button {
-    display: none; }
-  .Modal-active img {
-    height: 100%;
-    width: auto;
-    z-index: 2; }
+  z-index: 9999; }
+  .Modal-content {
+    display: flex;
+    margin: auto;
+    max-height: 80%;
+    max-width: 80%; }
+  .Modal-close {
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    right: 35px;
+    top: 15px; }
+  @media (max-width: 991.98px) {
+    .Modal {
+      padding: 0 10px; }
+      .Modal-content {
+        height: auto;
+        margin: 0;
+        max-width: none;
+        width: 80%; } }
+  @media (max-width: 767.98px) {
+    .Modal-content {
+      width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

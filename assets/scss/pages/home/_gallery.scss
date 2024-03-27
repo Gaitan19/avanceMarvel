@@ -82,12 +82,12 @@
 
     @include media-breakpoint-down(lg) {
         &-container {
-            &-right {
-                display: none;
-            }
-
+            align-items: center;
+            flex-direction: column;
+            &-right,
             &-left {
-                width: 96.6%;
+                display: flex;
+                width: 100%;
             }
         }
         &-image-primary {
@@ -96,17 +96,6 @@
     }
 
     @include media-breakpoint-down(md) {
-        &-container {
-            align-items: center;
-            flex-direction: column;
-
-            &-right,
-            &-left {
-                display: flex;
-                width: 100%;
-            }
-        }
-
         &-image-primary {
             width: 45%;
         }

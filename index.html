@@ -113,39 +113,44 @@
             <div class="Container Gallery-content">
                <h2 class="Gallery-title">Gallery</h2>
                <div class="Gallery-container">
-                    <div class="Gallery-container-left">
-                        <div class="Gallery-container-image Gallery-image-primary">
-                            <img class="Gallery-image" src="./assets/images/marvel1.jpg" alt="Marvel logo"/>
-                            <div class="Gallery-container-icon">
-                                <span class="fa-regular fa-eye Gallery-icon"></span>
-                            </div>
-                        </div>
-
-                        <div class="Gallery-container-image Gallery-image-primary">
-                            <img class="Gallery-image" src="./assets/images/marvel2.jpg" alt="Marvel united"/>
-                            <div class="Gallery-container-icon">
-                                <span class="fa-regular fa-eye Gallery-icon"></span>
-                            </div>
-                        </div>
-
-
-                        <div class="Gallery-container-image Gallery-image-secondary">
-                            <img class="Gallery-image" src="./assets/images/marvel3.jpg" alt="Heroes comics version"/>
-                            <div class="Gallery-container-icon">
-                                <span class="fa-regular fa-eye Gallery-icon"></span>
-                            </div>
-                        </div>
-
+                <div class="Gallery-container-left">
+                    <div class="Gallery-container-image Gallery-image-primary">
+                        <img class="Gallery-image" src="../assets/images/marvel1.jpg"alt="Marvel logo"/>
+                        <button class="Gallery-container-icon Button-modal">
+                            <span class="fa-regular fa-eye Gallery-icon"></span>
+                        </button>
                     </div>
 
-                    <div class="Gallery-container-right">
-                        <div class="Gallery-container-image w-100">
-                            <img class="Gallery-image" src="./assets/images/marvel4.jpg" alt="Iron man"/>
-                            <div class="Gallery-container-icon">
-                                <span class="fa-regular fa-eye Gallery-icon"></span>
-                            </div>
-                        </div>
+                    <div class="Gallery-container-image Gallery-image-primary">
+                        <img class="Gallery-image" src="../assets/images/marvel2.jpg" alt="Marvel united"/>
+                        <button class="Gallery-container-icon Button-modal">
+                            <span class="fa-regular fa-eye Gallery-icon"></span>
+                        </button>
                     </div>
+
+
+                    <div class="Gallery-container-image Gallery-image-secondary">
+                        <img class="Gallery-image" src="../assets/images/marvel3.jpg" alt="Heroes comics version"/>
+                        <button class="Gallery-container-icon Button-modal">
+                            <span class="fa-regular fa-eye Gallery-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="Gallery-container-right">
+                    <div class="Gallery-container-image w-100">
+                        <img class="Gallery-image" src="../assets/images/marvel4.jpg" alt="Iron man"/>
+                        <button class="Gallery-container-icon Button-modal">
+                            <span class="fa-regular fa-eye Gallery-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="modal" class="Modal">
+                    <span id="closeModal" class="fa-solid fa-xmark Modal-close"></span>
+                    <img class="Modal-content" id="modalImage">
+                </div>
                </div>
             </div>
         </section>
@@ -366,9 +371,11 @@
             </div>
               <form class="Subscribe-form">
                 <input
-                  type="email"
+                  type="text"
                   placeholder="Enter your mail address"
                   class="Subscribe-input"
+                  name="email_to" 
+                  id="email_to"
                   required
                 />
                 <Button type="submit" class="Button Button-subscribe">
@@ -376,7 +383,7 @@
                 </Button>
               </form>
             </div>
-        </section>
+        </section> 
 
         <div id="footer"></div>
 
@@ -387,6 +394,9 @@
         <script src="assets/js/header.js"></script>
         <script src="assets/js/tab.js" ></script>
         <script src="assets/js/footer.js"></script>
-
+        <script src="../assets/js/modal.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">emailjs.init('hDZKlCxeHGrE30TOu')</script>
+        <script src="../assets/js/mailer.js"></script>
     </body>
 </html>
